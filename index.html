@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1026/PNG/256/heart256_icon-icons.com_76061.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Quer Namorar Comigo</title>
+    <title>Decisão importante</title>
     </head>
 <body>
+   
     <div class="painel">
-        <h1>Quer Namorar comigo?!!</h1>
-        <h3>Eai, vai aceitar ou não?</h3>
-        <button id="sim">SIM!</button>
-        <button onmouseover="fuja()" id="nao">NÃO!</button>
-        <img src="https://media.tenor.com/eyQQPSf1LHgAAAAi/licking-heart-tongue-out.gif" alt="">
+        <h1>Quer namorar comigo?</h1>
+        <h3>A Escolha é Sua</h3>
+        <button style="position: fixed;display: block;" class="btn" onclick="sim()">SIM!</button>
+        <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="Urso com Coração">
     </div>
    
-  <script src="./script.js">
-  </script>
-</body>
+  
+    
+    <script>
+        function sim() {
+            alert("Boa Escolha! :)")
+            // redireciona para um URL após clicar no SIM
+            location.href = "https://www.youtube.com/watch?v=MWIkCaUljYk";
+        }
+    
+        function desvia(btn) {
+            // btn declarado na função
+            btn.style.position = 'absolute';
+            btn.style.bottom = geraPosicao(10, 90);
+            btn.style.left = geraPosicao(10, 90);
+            console.log('opa, desviei...');
+    
+        }
+    
+        function geraPosicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
+
+</script>
+ </body>
 </html>

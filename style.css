@@ -1,5 +1,5 @@
 body{
-    background-color: red;
+    background-color: rgb(170, 2, 2);
     color: black;
 }
 .painel{
@@ -16,15 +16,16 @@ body{
 
 height: 40px;
 width:60px;
-background-color: red;
+background-color: rgb(255, 0, 234);
 border:2px solid white;
 border-radius: 10px;
 color: white;
 margin-left: -50px;
+cursor:help;
 
 }
-#nao{
-
+.btn{
+position: absolute;
 height: 40px;
 width:60px;
 background-color: red;
@@ -32,8 +33,14 @@ border:2px solid white;
 border-radius: 10px;
 color: white;
 margin-left: 80px;
-cursor:pointer;
+cursor:help;
 }
 img{
     display: flex;
+    align-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    cursor: help;
 }
